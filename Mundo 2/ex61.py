@@ -1,0 +1,13 @@
+n1 = int(input('primeiro termo da PA: '))
+r = int(input('Razão da PA: '))
+ter = n1
+c = 1 
+to = 0
+r1 = 10
+while r1 != 0:
+    to = to + r1
+    while c <= to:
+        print('{} >'.format(ter),end=' ')
+        ter += r
+        c += 1
+    r1 =int(input('Mais números? '))

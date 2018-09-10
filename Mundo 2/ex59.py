@@ -1,6 +1,9 @@
+from math import factorial
 num = int(input('Digite um número: '))
-fa = 0
-while num != 0:
-    fa = (num - 1) * num
-    num -= 1
-    print('{}'.format(fa))
+fa = num
+while  fa > 0:
+    print('{}'.format(fa), end=' ')
+    print(' x ' if fa > 1 else ' = ' ,end=' ')
+    fa-=1
+print(factorial(num), end=' ')
+    
